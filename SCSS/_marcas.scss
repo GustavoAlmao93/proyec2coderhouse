@@ -1,0 +1,23 @@
+/* Marcas */
+
+.marcas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .marcas {
+    margin: 30px;
+    padding: 40px;
+  }
+
+  .marc {
+    font-size: 70px;
+    margin: 20px;
+  }
+
+  h5 {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+  }
+}

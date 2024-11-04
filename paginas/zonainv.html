@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InventarioMotoGA</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body class="bodyinv">
+    <header>
+      <div class="background">
+        <div class="content">
+          <h1>Bienvenido a MotoGA</h1>
+
+          <p>Estás en la zona de inventario</p>
+        </div>
+      </div>
+      <div class="botoninv">
+        <a href="./piezas.html" class="botoninv2">ZonaUsuario</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <form id="formAgregar">
+        <div class="inputslabels">
+          <div class="form-group">
+            <label for="nombrePieza">Pieza:</label>
+            <input
+              type="text"
+              id="nombrePieza"
+              required
+              placeholder="Nombre de la pieza"
+            />
+          </div>
+          <div class="form-group">
+            <label for="cantidadPieza">Cantidad:</label>
+            <input
+              type="number"
+              id="cantidadPieza"
+              required
+              placeholder="Cantidad"
+            />
+          </div>
+          <div class="form-group">
+            <label for="marcaPieza">Marca:</label>
+            <input
+              type="text"
+              id="marcaPieza"
+              required
+              placeholder="Marca de la pieza"
+            />
+          </div>
+          <div class="form-group">
+            <label for="modeloPieza">Modelo:</label>
+            <input
+              type="text"
+              id="modeloPieza"
+              required
+              placeholder="Modelo de la pieza"
+            />
+          </div>
+          <div class="form-group">
+            <label for="colorPieza">Color:</label>
+            <input
+              type="text"
+              id="colorPieza"
+              required
+              placeholder="Color de la pieza"
+            />
+          </div>
+          <div class="form-group">
+            <label for="serialPieza">Serial:</label>
+            <input
+              type="text"
+              id="serialPieza"
+              required
+              placeholder="Serial de la pieza"
+            />
+          </div>
+          <div class="form-group">
+            <label for="precioPieza">Precio:</label>
+            <input type="text" id="precioPieza" placeholder="Precio" />
+          </div>
+          <div class="form-group">
+            <label for="imagenPieza">Imagen:</label>
+            <input type="file" id="imagenPieza" accept="image/*" />
+          </div>
+        </div>
+        <button type="submit" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Agregar Pieza</span>
+        </button>
+      </form>
+
+      <h2>Inventario:</h2>
+      <table id="inventarioTabla">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Color</th>
+            <th>Serial</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="inventarioCuerpo"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

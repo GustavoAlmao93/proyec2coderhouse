@@ -1,0 +1,58 @@
+$colorprimario: rgb(240, 212, 154);
+
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+/* Contacto */
+
+.contacto-container {
+  border: 2px solid $colorprimario;
+  display: flex;
+
+  .imagen-container {
+    @include sizes(50%, 100vh);
+    border: 2px solid $colorprimario;
+    background-image: url(/multimedia/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    .titulo-imagen {
+      color: $colorprimario;
+      font-size: 70px;
+    }
+  }
+
+  h6 {
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(196, 168, 108);
+  }
+
+  .container-contacto {
+    @include sizes(50%, 100vh);
+    border: 2px solid $colorprimario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cuadro-info {
+      @include sizes(90%, 75%);
+      text-align: center;
+
+      .nombre-apellido,
+      .correo-asunto {
+        margin: 20px;
+        font-size: 20px;
+      }
+
+      .mess {
+        @include sizes(300px, 200px);
+      }
+    }
+  }
+}

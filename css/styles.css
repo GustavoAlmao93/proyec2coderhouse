@@ -1,0 +1,599 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* fondo */
+body {
+  background: radial-gradient(
+    circle,
+    rgb(54, 53, 53) 0%,
+    rgb(63, 61, 61) 25%,
+    rgb(66, 64, 64) 75%,
+    rgb(26, 25, 25) 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .logo {
+  height: 200px;
+  width: 400px;
+}
+.menu .button {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.menu .boton-general {
+  width: 160px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(124, 124, 116);
+  box-shadow: 0 0 25px rgb(163, 162, 160);
+}
+.menu .boton-general:hover {
+  box-shadow: 0 0 5px rgb(190, 120, 27), 0 0 25px rgb(209, 162, 74),
+    0 0 50px rgb(206, 142, 45), 0 0 100px rgb(223, 133, 32);
+}
+
+/* Botones */
+.boton {
+  width: 200px;
+  margin: 5px;
+  height: 40px;
+}
+.boton.boton-1 {
+  background-color: #cca145;
+}
+.boton.boton-2 {
+  background-color: #645521;
+}
+.boton.boton-3 {
+  background-color: #e7bf3c;
+}
+.boton.boton-4 {
+  background-color: #a8520b;
+}
+.boton.boton-5 {
+  background-color: #e69a0f;
+}
+
+/* Portada */
+.portadita {
+  background-image: url("../multimedia/motos.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.portadita .texto-portadita {
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+}
+.portadita .texto-portadita h1,
+.portadita .texto-portadita p {
+  font-size: 38px;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+}
+
+/* Publicidad */
+.publicidad-container {
+  display: flex;
+  justify-content: start;
+}
+.publicidad-container .publicidad {
+  height: 50%;
+  width: 100%;
+}
+
+/* Títulos */
+.titulitos {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.titulitos h4 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+/* Sección de Motos */
+.section-motos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.section-motos .motos p {
+  color: rgb(255, 255, 255);
+}
+.section-motos .motos img.motos1 {
+  height: 350px;
+}
+
+/* Encuesta */
+h8 {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.cuadro-encuesta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
+/* Galeria */
+.container-galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-galeria .foto-galeria {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.container-galeria .foto-galeria .card-img-top {
+  height: 300px;
+  width: 300px;
+}
+.container-galeria .foto-galeria .foto {
+  width: 350px;
+  height: 250px;
+}
+
+/* Marcas */
+.marcas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marcas-container .marcas {
+  margin: 30px;
+  padding: 40px;
+}
+.marcas-container .marc {
+  font-size: 70px;
+  margin: 20px;
+}
+.marcas-container h5 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+/* Piezas */
+.label1 {
+  color: white;
+}
+
+.filter {
+  width: 100px;
+}
+
+.filtro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piecitas {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.piecitas .item-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 20px;
+  padding: 25px;
+}
+.piecitas .item-container .items {
+  height: 200px;
+  width: 200px;
+}
+.piecitas .item-container .button-pedir {
+  margin-top: 20px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* Contacto */
+.contacto-container {
+  border: 2px solid rgb(240, 212, 154);
+  display: flex;
+}
+.contacto-container .imagen-container {
+  width: 50%;
+  height: 100vh;
+  border: 2px solid rgb(240, 212, 154);
+  background-image: url(/multimedia/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.contacto-container .imagen-container .titulo-imagen {
+  color: rgb(240, 212, 154);
+  font-size: 70px;
+}
+.contacto-container h6 {
+  font-size: 20px;
+  margin-left: 20px;
+  color: rgb(196, 168, 108);
+}
+.contacto-container .container-contacto {
+  width: 50%;
+  height: 100vh;
+  border: 2px solid rgb(240, 212, 154);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto-container .container-contacto .cuadro-info {
+  width: 90%;
+  height: 75%;
+  text-align: center;
+}
+.contacto-container .container-contacto .cuadro-info .nombre-apellido,
+.contacto-container .container-contacto .cuadro-info .correo-asunto {
+  margin: 20px;
+  font-size: 20px;
+}
+.contacto-container .container-contacto .cuadro-info .mess {
+  width: 300px;
+  height: 200px;
+}
+
+.footer-container {
+  border: 2px solid rgb(255, 255, 255);
+}
+.footer-container .titulo-footer {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+.footer-container .zona-botones {
+  display: flex;
+  justify-content: center;
+}
+.footer-container .zona-botones .boton-footer {
+  margin: 20px;
+  color: rgb(255, 255, 255);
+}
+.footer-container .derechos-autor {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-motos {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .motos1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .section-motos .motos p {
+    width: 90%;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .portadita {
+    height: auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .portadas {
+    padding-left: 20px;
+  }
+  p {
+    padding: 20px;
+  }
+  .footer-container .zona-botones {
+    border: 2px solid rgb(255, 255, 255);
+    flex-direction: column;
+  }
+  .piecitas {
+    flex-direction: column;
+  }
+  .filtro-container {
+    flex-direction: column;
+  }
+  .contacto-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto-container .imagen-container,
+  .contacto-container .container-contacto {
+    border: none;
+    flex: 1 1 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .contacto-container .container-contacto .cuadro-info .mess {
+    width: 240px;
+  }
+  .cuadro-encuesta {
+    flex-direction: column;
+  }
+  .cuadro-info {
+    justify-content: center;
+  }
+  .container-galeria {
+    justify-content: center;
+  }
+}
+
+.bodyinv {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("../multimedia/fondonegro.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  box-shadow: 0px 12px 12px rgba(255, 254, 254, 0.5);
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../multimedia/fondito.jpg") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  height: 100px;
+  width: 650px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: white;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  width: 500px;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: white;
+}
+
+table,
+th,
+td {
+  border: 1px solid #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+td img {
+  width: 50px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+.front {
+  font-size: 25px;
+}
+
+#imagenPieza {
+  border: 0.5px solid rgb(241, 234, 234);
+}
+
+.inputslabels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 10px;
+}
+
+.pushable {
+  color: white;
+  background: transparent;
+  border: 0.5px solid rgb(15, 15, 15);
+  border-radius: 5px;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline-color: deeppink;
+  transition: filter 250ms;
+  width: 250px;
+  margin-top: 20px;
+  transition: 0.5s ease, transform 0.5s ease;
+}
+
+.pushable:hover {
+  width: 255px;
+  border: 1px solid gray;
+  color: rgb(250, 114, 3);
+  border: 0.5px solid rgb(255, 123, 0);
+  transform: scale(1.2);
+}
+
+.btn-editar,
+.btn-eliminar {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.agotado {
+  opacity: 0.5;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.totalcarrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  color: rgb(248, 232, 2);
+}
+
+#comprarButton {
+  color: white;
+  background: transparent;
+  border: 0.5px solid rgb(15, 15, 15);
+  border-radius: 5px;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline-color: deeppink;
+  transition: filter 250ms;
+  width: 150px;
+  margin-top: 20px;
+  transition: 0.5s ease, transform 0.5s ease;
+  font-size: 20px;
+}
+
+#comprarButton:hover {
+  width: 255px;
+  border: 1px solid gray;
+  color: rgb(250, 114, 3);
+  border: 0.5px solid rgb(255, 123, 0);
+  transform: scale(1.2);
+}
+.comprarbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.botoninv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.botoninv2 {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 25px;
+  transition: 0.5s ease, transform 0.5s ease;
+  margin-right: 20px;
+}
+
+.botoninv2:hover {
+  font-size: 28px;
+  color: rgb(219, 196, 196);
+
+  transform: scale(1.2);
+}
+
+.parraf {
+  color: white;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

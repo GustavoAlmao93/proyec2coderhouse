@@ -1,0 +1,79 @@
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .section-motos {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .motos1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-motos .motos p {
+    width: 90%;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .portadita {
+    height: auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portadas {
+    padding-left: 20px;
+  }
+  p {
+    padding: 20px;
+  }
+  .footer-container {
+    .zona-botones {
+      border: 2px solid rgb(255, 255, 255);
+      flex-direction: column;
+    }
+  }
+
+  .piecitas {
+    flex-direction: column;
+  }
+
+  .filtro-container {
+    flex-direction: column;
+  }
+
+  .contacto-container {
+    flex-direction: column;
+    align-items: center;
+
+    .imagen-container,
+    .container-contacto {
+      border: none;
+      flex: 1 1 100%;
+      max-width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .contacto-container .container-contacto .cuadro-info .mess {
+    width: 240px;
+  }
+
+  .cuadro-encuesta {
+    flex-direction: column;
+  }
+
+  .cuadro-info {
+    justify-content: center;
+  }
+
+  .container-galeria {
+    justify-content: center;
+  }
+}

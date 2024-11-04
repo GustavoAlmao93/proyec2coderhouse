@@ -1,0 +1,27 @@
+$colorprimario: rgb(255, 255, 255);
+
+.footer-container {
+  border: 2px solid $colorprimario;
+
+  .titulo-footer {
+    display: flex;
+    justify-content: center;
+    color: $colorprimario;
+  }
+
+  .zona-botones {
+    display: flex;
+    justify-content: center;
+
+    .boton-footer {
+      margin: 20px;
+      color: $colorprimario;
+    }
+  }
+
+  .derechos-autor {
+    display: flex;
+    justify-content: center;
+    color: $colorprimario;
+  }
+}

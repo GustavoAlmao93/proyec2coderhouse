@@ -1,0 +1,27 @@
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+/* Galeria */
+
+.container-galeria {
+  display: flex;
+  flex-wrap: wrap;
+
+  .foto-galeria {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    .card-img-top {
+      height: 300px;
+      width: 300px;
+    }
+
+    .foto {
+      @include sizes(350px, 250px);
+    }
+  }
+}
